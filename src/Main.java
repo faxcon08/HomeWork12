@@ -12,7 +12,7 @@ public class Main {
         Author firstAuthor = new Author("  Лев    Толстой  ");
         Author secondAuthor = new Author("  Деннис  "," Ричи  ");
 
-        Book firstBook = new Book("    Война и Мир", firstAuthor, 1995);
+        Book firstBook = new Book("    Война и Мир", firstAuthor, 1997);
         Book secondBook = new Book("    Язык программирования Си   ", secondAuthor, 2001);
 
         myDelimiter();

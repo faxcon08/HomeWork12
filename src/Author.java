@@ -1,12 +1,13 @@
 public class Author {
-    private String firstName = "Default fist_name Author";
-    private String lastName = "Default last_name Author";
+    private String firstName = "Default_fist_name";
+    private String lastName = "Default_last_name";
 
     public static boolean checkString(String nameForCheck, String errorMessage) {
         if (nameForCheck != null && !nameForCheck.isBlank())
             return true;
         else {
-            System.out.println(errorMessage);
+            Main.printRedLN(errorMessage);
+//            System.out.println(errorMessage);
             return false;
         }
     }

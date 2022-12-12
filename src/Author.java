@@ -1,6 +1,6 @@
 public class Author {
-    String firstName = "Default fist_name Author";
-    String lastName = "Default last_name Author";
+    private String firstName = "Default fist_name Author";
+    private String lastName = "Default last_name Author";
 
     public static boolean checkString(String nameForCheck, String errorMessage) {
         if (nameForCheck != null && !nameForCheck.isBlank())

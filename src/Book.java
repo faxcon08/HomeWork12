@@ -38,7 +38,6 @@ public class Book {
         return this.author.getFullName();
     }
     public String toString() {
-//        return "Книга: "+this.bookName+"  Автор: "+this.author+" год выпуска - "+this.publishingYear;
-        return String.format("Книга: %30s Автор: %15s год выпуска - %4d г.",this.bookName,this.author,this.publishingYear);
+        return String.format("Книга: %30s Автор: %15s год выпуска - %4d г.",this.getBookName(),this.author,this.getPublishingYear());
     }// toString
 }

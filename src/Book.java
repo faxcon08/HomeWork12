@@ -1,7 +1,10 @@
 public class Book {
-    private String bookName = "Default Book Name";
+    private String bookName = "DEFAULT_BOOK_NAME";
     private final Author author;
     private int publishingYear;
+
+    private final int firstPublishingYear = 1445;
+    private final int defaultYear = 2000;
 
     public Book(String bookName,Author author, int publishingYear) {
 
@@ -11,16 +14,16 @@ public class Book {
 
         this.author = author;
 
-        if (publishingYear>=1445) {
+        if (publishingYear>= firstPublishingYear) {
             this.publishingYear = publishingYear;
         } else {
             System.out.println("Некорректный год издания");
-            this.publishingYear = 2000;
+            this.publishingYear = defaultYear;
         }
 
     }// book()
     public void setPublishingYear(int year) {
-        if(year>=1445)
+        if(year>= firstPublishingYear)
             this.publishingYear=year;
         else
             System.out.println("Попытка изменить год изадания на некорректный год");
